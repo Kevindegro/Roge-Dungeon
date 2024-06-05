@@ -18,8 +18,8 @@
         #define SKULL "\U0001f480"
 
         void imprimirMazmorra(int tamañomazmorra, char dungeon[tamañomazmorra][tamañomazmorra], int fila, int columna) {
-            for (int i = fila - 1; i <= fila + 1; i++) {
-                for (int j = columna - 1; j <= columna + 1; j++) {
+            for (int i = fila - 3; i <= fila + 3; i++) {
+                for (int j = columna - 3; j <= columna + 3; j++) {
                     if (i >= 0 && i < tamañomazmorra && j >= 0 && j < tamañomazmorra) {
                        /* if(dungeon[i][j] == 'C') {
                             dungeon[i][j] = printf(SKULL " ");
