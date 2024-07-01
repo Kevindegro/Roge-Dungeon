@@ -35,11 +35,10 @@ void limpiar_consola() {
 int bienvenida(struct caracteristicas jugador) { //Esta funcion es la primera que aparece en el juego, pide un nombre de no mas de 20 caracteres
     while (1) {
         printf(WHITE"                    Bienvenido jugador. Ingrese su nombre: "RESET); //Asi se pone colores 
-        //Con "WHITE" o cualquier color definido, y siempre al final "RESET" (Para que se vuelva a su color original)
+        //Con "WHITE" o cualquier color definido, y siempre al final "RESET" (Para que se vuelva a su color original) 
         scanf("%s", jugador.nombre);
         limpiar_consola();
         break;
     }
 }
-
 //-------------------------------------------------------------------------------------------------------
